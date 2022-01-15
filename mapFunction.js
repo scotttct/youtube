@@ -8,7 +8,7 @@ document.getElementById('today').innerHTML = today
     document.getElementById("search-results").innerHTML = ""
 
     // loop over data.items
-    data.items.forEach(item => {
+    data.items.map(item => {
         //check to see only videos and no undefined videos
         if (item.kind != 'youtube#channel' && item.id.videoId != undefined) {
           //I used let but const might work better here...
