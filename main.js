@@ -46,12 +46,20 @@ document.getElementById('today').innerHTML = today
 
   document.getElementById("searchButton").addEventListener("click", function(e) {
       e.preventDefault
-        console.log('the button was clicked')
 
         let searchStr = document.getElementById('search-box').value
-
-        console.log('the search string is', searchStr)
 
         fetchDataFromYoutube(searchStr)
 
   })
+
+  document.getElementById("search-box").addEventListener("keyup", function(e) {
+    if (e.keyCode === 13) {
+      let searchStr = document.getElementById('search-box').value
+
+      fetchDataFromYoutube(searchStr)
+
+    }
+
+      
+})
