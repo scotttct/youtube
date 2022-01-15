@@ -1,0 +1,44 @@
+body {
+    display: flexbox;
+    align-items:stretch;
+    background-color:rgb(66, 66, 66);
+}
+
+
+.video-output {
+    margin: 40px;
+    padding: 20px;
+}
+.heading {
+    color:white;
+}
+
+.text-box {
+    width: 400px;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: flexbox;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#search-button {
+    width: 100px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer {
+    text-align: center;
+    color: whitesmoke;
+    position:fixed;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+}
